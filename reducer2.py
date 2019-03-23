@@ -20,4 +20,4 @@ def reducer(k):
             print ':'.join(i.strip('\n').split('\t'))
 
 if __name__=='__main__':
-    reducer(3)
+    reducer(5)

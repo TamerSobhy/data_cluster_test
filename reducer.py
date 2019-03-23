@@ -3,7 +3,7 @@ import itertools, operator, sys
 
 def parsePairs():
     for line in sys.stdin:
-        yield tuple(line.strip('\n').split('\t'))
+        yield tuple(line.lower().strip('\n').split('\t'))
 
 def reducer():
     for key, pairs in itertools.groupby(parsePairs(),
